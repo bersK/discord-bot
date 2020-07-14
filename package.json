@@ -1,0 +1,30 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "Simple generic discord bot",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node-modules/.bin/eslint src/",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bersK/discord-bot.git"
+  },
+  "keywords": [],
+  "author": "Stefan Stefanov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bersK/discord-bot/issues"
+  },
+  "homepage": "https://github.com/bersK/discord-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}
