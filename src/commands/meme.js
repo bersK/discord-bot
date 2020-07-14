@@ -11,14 +11,18 @@ module.exports = async (msg, args) => {
   if (Object.keys(subOptions).includes(args[0]) ||
       Object.values(subOptions).includes(args[0]) 
   ) {
-  // if (args[0].length !== 0) {
     try {
-      await msg.channel.send(await imgapi(subOptions[args[0]], false));
+      if (Object.values(subOptions).includes(args[0])) {
+        await msg.channel.send(await imgapi(args[0], false));
+      } else {
+        await msg.channel.send(await imgapi(subOptions[args[0]], false));
+      }
     } catch (error) {
       console.log('Ooga booga fails');
     }
 
     console.log(`Subreddit: ${subOptions[args[0]]}`);
+
   } else if (args[0] === 'help' || args[0] === 'h') {
     try {
       await msg.channel.send('Mess up harder next time.');
