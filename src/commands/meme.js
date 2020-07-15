@@ -4,6 +4,7 @@ const subOptions = {
   1: 'meme',
   2: 'dankmemes',
   3: 'trashy',
+  69: 'battlestations',
 };
 
 // TODO: Some kind of sub validition to be an actual meme sub
